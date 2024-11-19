@@ -1,4 +1,4 @@
-import mem from 'mem';
+import mem from './mem.js';
 
 type UserLocaleOptions = {
   useFallbackLocale?: boolean;

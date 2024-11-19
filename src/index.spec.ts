@@ -9,10 +9,8 @@ let mockNavigatorObject: object;
  * object to mem cacheKey function.
  */
 
-vi.mock('mem', async () => {
-  const { default: actualMem } = await vi.importActual<{
-    default: typeof import('mem');
-  }>('mem');
+vi.mock('./mem', async () => {
+  const { default: actualMem } = await vi.importActual<typeof import('./mem.js')>('./mem');
 
   return {
     default: vi.fn().mockImplementation((fn, options) => {

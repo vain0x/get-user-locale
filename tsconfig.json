@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "lib": ["DOM", "ES2020"],
     "declaration": true,
     "esModuleInterop": true,
     "isolatedDeclarations": true,
@@ -11,7 +12,7 @@
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5",
+    "target": "es2020",
     "verbatimModuleSyntax": true
   },
   "exclude": ["dist"]
